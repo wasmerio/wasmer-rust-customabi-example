@@ -25,10 +25,11 @@ The module is defined as:
   (import "customabi" "print" (func $print (type $t0)))
   (import "customabi" "exit" (func $exit (type $t1)))
   ;; ...
-)```
+)
+```
 
 
-Now we should be ready to compile and run our host environment!
+Now we should be ready to run the `app.wasm` file our host environment!
 
 ```bash
 cargo run
@@ -40,4 +41,4 @@ This should output this to your shell:
 Hello, World! from HOST_NAME
 Do exit with code 0
 Here are the logged calls: ["print", "exit"]
-```.
+```
