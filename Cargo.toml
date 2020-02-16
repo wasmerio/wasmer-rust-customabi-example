@@ -1,0 +1,10 @@
+[package]
+name = "wasmer_customabi"
+version = "0.1.0"
+authors = ["The Wasmer Engineering Team <engineering@wasmer.io>"]
+edition = "2018"
+
+[workspace]
+
+[dependencies]
+wasmer-runtime = "0.13.1"
