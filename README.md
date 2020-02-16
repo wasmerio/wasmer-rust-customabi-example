@@ -19,12 +19,13 @@ rustc --target=wasm32-unknown-unknown app.rs
 
 Now, you have a `app.wasm` file that you should be ready to use anywhere.
 The module is defined as:
+
 ```wasm
 (module
   (import "customabi" "print" (func $print (type $t0)))
   (import "customabi" "exit" (func $exit (type $t1)))
   ;; ...
-)```.
+)```
 
 
 Now we should be ready to compile and run our host environment!
