@@ -1,6 +1,6 @@
-# Wasm Custom ABI (Rust)
+# Wasm Custom ABI from Rust
 
-This project showcases two things:
+This project showcases:
 1. How to create a WebAssembly module from Rust using a custom ABI 
 2. How to use this module from a host environment
 
@@ -11,13 +11,14 @@ You can install it with `rustup target add wasm32-unknown-unknown`.
 
 ## Instructions
 
-First, let's compile the WebAssembly module.
+First, let's compile our app into a WebAssembly Module.
 
 ```bash
 rustc --target=wasm32-unknown-unknown app.rs
 ```
 
-Now, you have a `app.wasm` file that you should be ready to use anywhere.
+This should have produced a `app.wasm` file ready to be used anywhere.
+
 The module is defined as:
 
 ```wasm
@@ -35,7 +36,7 @@ Now we should be ready to run the `app.wasm` file our host environment!
 cargo run
 ```
 
-This should output this to your shell:
+This will output the following in shell:
 
 ```
 Hello, World! from HOST_NAME
